@@ -1,0 +1,73 @@
+body {
+    font-family: Noto Sans KR;
+    background-color: #f5f0bb;
+}
+
+form {
+    padding: 20px;
+    background-color: #dbdfaa;
+}
+
+.login,
+.logon,
+.joinup {
+    margin: auto;
+    width: 300px;
+    background-color: #dbdfaa;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+.join {
+    width: 400px;
+    margin: auto;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    background-color: #dbdfaa;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+}
+
+.user_id {
+    margin-bottom: 10px;
+}
+
+.password {
+    margin-bottom: 10px;
+}
+
+.brith {
+    display: flex;
+    gap: 10px;
+}
+
+.gender {
+    border: 1px solid #dadada;
+    padding: 15px 5px;
+}
+
+#btn {
+    background-color: #73a9ad;
+    margin-bottom: 30px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #9b9b9b;
+    font-size: 12px;
+    text-align: center;
+}
+
+h1 {
+    background-color: #73a9ad;
+    color: white;
+    border-radius: 5px;
+}

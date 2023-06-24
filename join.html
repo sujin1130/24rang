@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 form</title>
+    <!-- 네이버 회원가입 창 참고 -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="join">
+        <form action="join_up.html" method="get">
+            <!-- 상단 제목 -->
+            <h1>회원가입</h1>
+            <!-- 1. 아이디 -->
+            <div>
+                <label for="userid" required>아이디</label>
+                <input type="text" id="userid" name="userid" required>
+            </div>
+            <!-- 2. 비밀번호 -->
+            <div>
+                <label for="pw" required>비밀번호</label>
+                <input type="password" id="pw" name="pw" required>
+                <label for="confirm-password" required>비밀번호 재확인</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <!-- 3. 이름 -->
+            <div>
+                <label for="username" required>이름</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <!-- 4. 생년월일 -->
+            <div>
+                <label for="brith">생년월일
+                    <input type="number" id="brith" placeholder="년(4자)">
+                    <select name="birth1" id="brith">
+                        <option value="">월</option>
+                        <option value="1">1월</option>
+                        <option value="2">2월</option>
+                        <option value="3">3월</option>
+                        <option value="4">4월</option>
+                        <option value="5">5월</option>
+                        <option value="6">6월</option>
+                        <option value="7">7월</option>
+                        <option value="8">8월</option>
+                        <option value="9">9월</option>
+                        <option value="10">10월</option>
+                        <option value="11">11월</option>
+                        <option value="12">12월</option>
+                    </select>
+                    <!-- q. 일을 설정할 때 30일이 최대인 달에 따로 적용하는 방법?? -->
+                    <input type="number" id="brith" placeholder="일" min="1" max="31">
+                </label>
+            </div>
+            <!-- 5. 성별 -->
+            <div>
+                <label for="gender">성별</label>
+                <div>
+                    <label><input type="radio" name="gender">남자</label>
+                    <label><input type="radio" name="gender">여자</label>
+                    <label><input type="radio" name="gender">선택안함</label>
+                </div>
+            </div>
+            <!-- 6. 본인 확인 이메일 -->
+            <div>
+                <label for="email">본인 확인 이메일 <small>(선택)</small></label>
+                <input type="email" placeholder="선택입력">
+            </div>
+            <!-- 7. 휴대전화 -->
+            <div>
+                <select>
+                    <option value="#">대한민국 +82</option>
+                </select>
+                <div>
+                    <input type="number" placeholder="전화번호 입력">
+                    <input type="button" value="인증번호 받기">
+                </div>
+                <input type="number" placeholder="인증번호를 입력하세요">
+            </div>
+            <!-- 8. 회원가입 -->
+            <input type="submit" value="회원가입하기">
+        </form>
+    </div>
+</body>
+</html>
